@@ -1,6 +1,7 @@
-import { ReactSVG } from 'react-svg'
+const Logo = ({ className = '', ...props }) => <img src={"https://images.vexels.com/media/users/3/142750/isolated/preview/ff94b207d7c284811f2c939f46aeb16b-flat-blue-blazer-clothing-icon-by-vexels.png"} alt="Logo" />
 
-const Logo = ({ className = '', ...props }) => (
+export default Logo
+
   // <svg
   //   width="32"
   //   height="32"
@@ -18,32 +19,3 @@ const Logo = ({ className = '', ...props }) => (
   //     fill="var(--primary)"
   //   />
   // </svg>
-
-  <ReactSVG
-  src="https://images.vexels.com/media/users/3/142750/isolated/preview/ff94b207d7c284811f2c939f46aeb16b-flat-blue-blazer-clothing-icon-by-vexels.png"
-  afterInjection={(error, svg) => {
-    if (error) {
-      console.error(error)
-      return
-    }
-    console.log(svg)
-  }}
-  beforeInjection={(svg) => {
-    svg.classList.add('svg-class-name')
-    svg.setAttribute('style', 'width: 200px')
-  }}
-  evalScripts="always"
-  fallback={() => <span>Error!</span>}
-  loading={() => <span>Loading</span>}
-  renumerateIRIElements={false}
-  useRequestCache={false}
-  wrapper="span"
-  className="wrapper-class-name"
-  onClick={() => {
-    console.log('wrapper onClick')
-  }}
-/>
-
-)
-
-export default Logo
