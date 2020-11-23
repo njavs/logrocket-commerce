@@ -1,4 +1,4 @@
-const Logo = ({ className = '', ...props }) => <img src={"https://images.vexels.com/media/users/3/142750/isolated/preview/ff94b207d7c284811f2c939f46aeb16b-flat-blue-blazer-clothing-icon-by-vexels.png"} alt="Logo" />
+const Logo = ({ className = '', ...props }) => <img src={"https://icon-library.com/images/icon-clothing/icon-clothing-4.jpg"} alt="Logo" />
 
 export default Logo
 
